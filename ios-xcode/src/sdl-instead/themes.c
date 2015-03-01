@@ -857,7 +857,11 @@ int game_theme_init(void)
 #endif
 
 #ifdef IOS /* for IOS need a good graphics :) */
-    gfx_get_max_mode(&w, &h);
+    if (game_theme.h > game_theme.w) {
+        gfx_get_max_mode(&h, &w);
+    } else {
+        gfx_get_max_mode(&w, &h);
+    }
 #endif
     
 	game_theme_scale(w, h);

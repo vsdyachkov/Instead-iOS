@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776BB7A91AA3480B009889BF /* Media.xcassets */; };
+		776BB7C11AA372A9009889BF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 776BB7C01AA372A9009889BF /* README.md */; };
 		D017090A1A33252B00AC619F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D01709091A33252B00AC619F /* libz.dylib */; };
 		D03F95141A330C2A0054CC00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95131A330C2A0054CC00 /* UIKit.framework */; };
 		D03F95161A330C2A0054CC00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95151A330C2A0054CC00 /* Foundation.framework */; };
@@ -114,6 +115,7 @@
 
 /* Begin PBXFileReference section */
 		776BB7A91AA3480B009889BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		776BB7C01AA372A9009889BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D01709091A33252B00AC619F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D03F95101A330C2A0054CC00 /* INSTEAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INSTEAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03F95131A330C2A0054CC00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -263,6 +265,7 @@
 		D03F95071A330C2A0054CC00 = {
 			isa = PBXGroup;
 			children = (
+				776BB7C01AA372A9009889BF /* README.md */,
 				D03F965F1A330F2D0054CC00 /* Resources */,
 				D03F95231A330C2A0054CC00 /* sdl-instead */,
 				D03F96051A330E7D0054CC00 /* lua */,
@@ -587,6 +590,7 @@
 				D03F96511A330E8F0054CC00 /* ltable.c in Sources */,
 				D03F965A1A330E8F0054CC00 /* lstring.c in Sources */,
 				D03F956C1A330C9F0054CC00 /* input.c in Sources */,
+				776BB7C11AA372A9009889BF /* README.md in Sources */,
 				D03F95701A330C9F0054CC00 /* util.c in Sources */,
 				D03F95821A330C9F0054CC00 /* sound.c in Sources */,
 				D03F95721A330C9F0054CC00 /* cache.c in Sources */,
