@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776BB7A91AA3480B009889BF /* Media.xcassets */; };
 		D017090A1A33252B00AC619F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D01709091A33252B00AC619F /* libz.dylib */; };
 		D03F95141A330C2A0054CC00 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95131A330C2A0054CC00 /* UIKit.framework */; };
 		D03F95161A330C2A0054CC00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95151A330C2A0054CC00 /* Foundation.framework */; };
@@ -78,9 +79,6 @@
 		D03F96811A3311FA0054CC00 /* libSDL2_ttf.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95A91A330DEC0054CC00 /* libSDL2_ttf.a */; };
 		D03F96821A3311FA0054CC00 /* libSDL2.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F95971A330DB20054CC00 /* libSDL2.a */; };
 		D03F96851A3313C70054CC00 /* ios.m in Sources */ = {isa = PBXBuildFile; fileRef = D03F96841A3313C70054CC00 /* ios.m */; };
-		D03F96871A3313F80054CC00 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D03F96861A3313F80054CC00 /* Default-568h@2x.png */; };
-		D0D9EE071A33608F00EE2C95 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0D9EE061A33608F00EE2C95 /* Icon.png */; };
-		D0FBCBB11A3C634900DC5CD8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = D0FBCBB01A3C634900DC5CD8 /* iTunesArtwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +113,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		776BB7A91AA3480B009889BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		D01709091A33252B00AC619F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D03F95101A330C2A0054CC00 /* INSTEAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INSTEAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03F95131A330C2A0054CC00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -231,10 +230,7 @@
 		D03F967B1A3311DD0054CC00 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		D03F967D1A3311E70054CC00 /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = usr/lib/libiconv.dylib; sourceTree = SDKROOT; };
 		D03F96841A3313C70054CC00 /* ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ios.m; path = "src/sdl-instead/ios.m"; sourceTree = SOURCE_ROOT; };
-		D03F96861A3313F80054CC00 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		D03F968C1A3314CF0054CC00 /* info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
-		D0D9EE061A33608F00EE2C95 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
-		D0FBCBB01A3C634900DC5CD8 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,12 +264,12 @@
 			isa = PBXGroup;
 			children = (
 				D03F965F1A330F2D0054CC00 /* Resources */,
+				D03F95231A330C2A0054CC00 /* sdl-instead */,
 				D03F96051A330E7D0054CC00 /* lua */,
 				D03F95A41A330DEC0054CC00 /* SDL_ttf.xcodeproj */,
 				D03F959E1A330DDB0054CC00 /* SDL_mixer.xcodeproj */,
 				D03F95981A330DC60054CC00 /* SDL_image.xcodeproj */,
 				D03F95911A330DB20054CC00 /* SDL.xcodeproj */,
-				D03F95231A330C2A0054CC00 /* sdl-instead */,
 				D03F95121A330C2A0054CC00 /* Frameworks */,
 				D03F95111A330C2A0054CC00 /* Products */,
 			);
@@ -309,34 +305,29 @@
 		D03F95231A330C2A0054CC00 /* sdl-instead */ = {
 			isa = PBXGroup;
 			children = (
-				D03F96841A3313C70054CC00 /* ios.m */,
-				D03F952D1A330C9F0054CC00 /* config.h */,
-				D03F952E1A330C9F0054CC00 /* game.c */,
-				D03F952F1A330C9F0054CC00 /* game.h */,
-				D03F95301A330C9F0054CC00 /* idf.c */,
-				D03F95311A330C9F0054CC00 /* input.c */,
-				D03F95321A330C9F0054CC00 /* instead.c */,
-				D03F95351A330C9F0054CC00 /* themes.h */,
-				D03F95361A330C9F0054CC00 /* tinymt32.c */,
-				D03F95371A330C9F0054CC00 /* tinymt32.h */,
-				D03F95381A330C9F0054CC00 /* util.c */,
-				D03F95391A330C9F0054CC00 /* util.h */,
-				D03F953A1A330C9F0054CC00 /* main.c */,
 				D03F953C1A330C9F0054CC00 /* cache.c */,
 				D03F953D1A330C9F0054CC00 /* cache.h */,
 				D03F953E1A330C9F0054CC00 /* config.c */,
+				D03F952D1A330C9F0054CC00 /* config.h */,
 				D03F953F1A330C9F0054CC00 /* externals.h */,
+				D03F952E1A330C9F0054CC00 /* game.c */,
+				D03F952F1A330C9F0054CC00 /* game.h */,
 				D03F95401A330C9F0054CC00 /* graphics.c */,
 				D03F95411A330C9F0054CC00 /* graphics.h */,
+				D03F95301A330C9F0054CC00 /* idf.c */,
 				D03F95421A330C9F0054CC00 /* idf.h */,
+				D03F95311A330C9F0054CC00 /* input.c */,
 				D03F95431A330C9F0054CC00 /* input.h */,
+				D03F95321A330C9F0054CC00 /* instead.c */,
 				D03F95441A330C9F0054CC00 /* instead.h */,
 				D03F95451A330C9F0054CC00 /* internals.h */,
 				D03F95461A330C9F0054CC00 /* ioapi.c */,
 				D03F95471A330C9F0054CC00 /* ioapi.h */,
+				D03F96841A3313C70054CC00 /* ios.m */,
 				D03F954A1A330C9F0054CC00 /* lfs.c */,
 				D03F954B1A330C9F0054CC00 /* list.c */,
 				D03F954C1A330C9F0054CC00 /* list.h */,
+				D03F953A1A330C9F0054CC00 /* main.c */,
 				D03F954E1A330C9F0054CC00 /* menu.c */,
 				D03F954F1A330C9F0054CC00 /* menu.h */,
 				D03F95521A330C9F0054CC00 /* SDL_anigif.c */,
@@ -349,9 +340,14 @@
 				D03F955E1A330C9F0054CC00 /* sound.c */,
 				D03F955F1A330C9F0054CC00 /* sound.h */,
 				D03F95611A330C9F0054CC00 /* themes.c */,
+				D03F95351A330C9F0054CC00 /* themes.h */,
+				D03F95361A330C9F0054CC00 /* tinymt32.c */,
+				D03F95371A330C9F0054CC00 /* tinymt32.h */,
 				D03F95631A330C9F0054CC00 /* unpack.c */,
 				D03F95641A330C9F0054CC00 /* unzip.c */,
 				D03F95651A330C9F0054CC00 /* unzip.h */,
+				D03F95381A330C9F0054CC00 /* util.c */,
+				D03F95391A330C9F0054CC00 /* util.h */,
 			);
 			name = "sdl-instead";
 			path = INSTEAD;
@@ -452,13 +448,11 @@
 		D03F965F1A330F2D0054CC00 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D03F96861A3313F80054CC00 /* Default-568h@2x.png */,
-				D0FBCBB01A3C634900DC5CD8 /* iTunesArtwork */,
-				D0D9EE061A33608F00EE2C95 /* Icon.png */,
-				D03F968C1A3314CF0054CC00 /* info.plist */,
 				D03F96641A330F770054CC00 /* lang */,
 				D03F96621A330F680054CC00 /* stead */,
 				D03F96601A330F5D0054CC00 /* themes */,
+				D03F968C1A3314CF0054CC00 /* info.plist */,
+				776BB7A91AA3480B009889BF /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -567,11 +561,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0D9EE071A33608F00EE2C95 /* Icon.png in Resources */,
 				D03F96651A330F770054CC00 /* lang in Resources */,
-				D0FBCBB11A3C634900DC5CD8 /* iTunesArtwork in Resources */,
 				D03F96631A330F680054CC00 /* stead in Resources */,
-				D03F96871A3313F80054CC00 /* Default-568h@2x.png in Resources */,
+				776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */,
 				D03F96611A330F5D0054CC00 /* themes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -674,6 +666,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
@@ -711,6 +705,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;

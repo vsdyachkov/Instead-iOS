@@ -855,6 +855,11 @@ int game_theme_init(void)
 		h = game_theme.h;
 	}
 #endif
+
+#ifdef IOS /* for IOS need a good graphics :) */
+    gfx_get_max_mode(&w, &h);
+#endif
+    
 	game_theme_scale(w, h);
 
 	if (gfx_set_mode(game_theme.w, game_theme.h, opt_fs)) {
