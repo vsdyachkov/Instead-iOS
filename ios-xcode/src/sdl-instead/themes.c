@@ -856,7 +856,7 @@ int game_theme_init(void)
 	}
 #endif
 
-#ifdef IOS /* for IOS need a good graphics :) */
+#ifdef IOS /* setting the correct screen resolution from theme settings */
     if (game_theme.h > game_theme.w) {
         gfx_get_max_mode(&h, &w);
     } else {
@@ -877,8 +877,21 @@ int game_theme_init(void)
 		game_theme_select(DEFAULT_THEME);
 		return -1;
 	}
+    
+#ifdef IOS /* setting the correct orientation of the screen from theme settings*/
+    if (game_theme.h > game_theme.w) {
+        SDL_SetHint(SDL_HINT_ORIENTATIONS, "Portrait PortraitUpsideDown" );
+        set_orientation(1);
+    } else {
+        SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight" );
+        set_orientation(3);
+    }
+#endif
+    
 	return 0;
 }
+
+
 
 static int theme_parse(const char *path)
 {

@@ -27,6 +27,7 @@
 
 #include "graphics.h"
 #include "sound.h"
+#include "SDL_hints.h"
 
 #define DEFAULT_THEME "default"
 #ifndef THEMES_PATH

@@ -116,6 +116,7 @@
 /* Begin PBXFileReference section */
 		776BB7A91AA3480B009889BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		776BB7C01AA372A9009889BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		776BB7C61AA3A0FB009889BF /* ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ios.h; path = "src/sdl-instead/ios.h"; sourceTree = SOURCE_ROOT; };
 		D01709091A33252B00AC619F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		D03F95101A330C2A0054CC00 /* INSTEAD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = INSTEAD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D03F95131A330C2A0054CC00 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -327,6 +328,7 @@
 				D03F95461A330C9F0054CC00 /* ioapi.c */,
 				D03F95471A330C9F0054CC00 /* ioapi.h */,
 				D03F96841A3313C70054CC00 /* ios.m */,
+				776BB7C61AA3A0FB009889BF /* ios.h */,
 				D03F954A1A330C9F0054CC00 /* lfs.c */,
 				D03F954B1A330C9F0054CC00 /* list.c */,
 				D03F954C1A330C9F0054CC00 /* list.h */,

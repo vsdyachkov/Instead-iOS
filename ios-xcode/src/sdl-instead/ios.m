@@ -59,6 +59,13 @@ static char *inbox(void)
 	return dir;
 }
 
+void set_orientation(int orientation)
+{
+    if (![[[UIDevice currentDevice] valueForKey:@"orientation"] isEqual: @(orientation)]) {
+        [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+    }
+}
+
 int setup_inbox(void)
 {
 	char path[PATH_MAX];
