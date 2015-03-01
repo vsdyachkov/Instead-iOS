@@ -7,6 +7,7 @@ INSTEAD (INterpreter of Simple TExt ADventure) — интерпретатор п
 Компоненты:
 
 * https://github.com/instead-hub/instead - Основной репозиторий проекта 
+* http://sourceforge.net/projects/instead/files/instead/build-bin-data/ios-build.zip/download - Xcode Instead project
 * https://github.com/LuaDist/lua - Lua is a powerful, fast, lightweight, embeddable scripting language.
 * http://hg.libsdl.org/SDL - Simple Directmedia Layer.
 * http://hg.libsdl.org/SDL_image/ - Image decoding add-on for SDL.
