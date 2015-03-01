@@ -369,12 +369,12 @@ char *game_menu_gen(void)
 {
 	if (cur_menu == menu_main) {
         
-#ifdef IOS /* Cut exit function on iOS */
-        int len = strlen(MAIN_MENU) - strlen(strstr(MAIN_MENU, "\n<a:/ask_quit>"));
-        strncpy(menu_buff, MAIN_MENU, len);
-#else
+//#ifdef IOS /* Cut exit function on iOS */
+//        unsigned long len = strlen(MAIN_MENU) - strlen(strstr(MAIN_MENU, "<a:/ask_quit>"));
+//        strncpy(menu_buff, MAIN_MENU, len);
+//#else
         strcpy(menu_buff, MAIN_MENU);
-#endif
+//#endif
 		
 	} else if (cur_menu == menu_about) {
 		snprintf(menu_buff, sizeof(menu_buff), ABOUT_MENU, VERSION);
