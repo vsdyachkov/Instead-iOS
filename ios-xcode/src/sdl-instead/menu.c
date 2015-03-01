@@ -368,6 +368,13 @@ static int menu_settings_num = 0;
 char *game_menu_gen(void)
 {
 	if (cur_menu == menu_main) {
+        
+        /*
+        str = MAIN_MENU
+        from <a:/ask_quit>
+        to next </a>
+        */
+        
 		strcpy(menu_buff, MAIN_MENU);
 	} else if (cur_menu == menu_about) {
 		snprintf(menu_buff, sizeof(menu_buff), ABOUT_MENU, VERSION);
@@ -378,7 +385,14 @@ char *game_menu_gen(void)
 		opt_justify = (unsigned int)opt_justify % JUST_MAX;
 		switch (menu_settings_num) {
 		case 0:
-			snprintf(menu_buff, sizeof(menu_buff), SETTINGS_GFX_MENU, 
+            
+            /*
+            str SETTINGS_GFX_MENU
+            from = "<a:/hl>%s</a>\n";
+            to = "<a:/fading>%s</a>\n";
+            */
+                
+			snprintf(menu_buff, sizeof(menu_buff), SETTINGS_GFX_MENU,
 			opt_get_mode(), opt_fs?ON:OFF, opt_fsize, just[opt_justify],
 				opt_hl?ON:OFF, opt_fading?ON:OFF, opt_owntheme?ON:OFF);
 			break;
