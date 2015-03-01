@@ -8,6 +8,8 @@
 #define LANG_PATH "lang"
 
 extern int setup_inbox(void);
+
 extern void set_orientation(int orientation);
+void correct_font_size (void);
 
 #endif

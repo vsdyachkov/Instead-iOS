@@ -369,13 +369,13 @@ char *game_menu_gen(void)
 {
 	if (cur_menu == menu_main) {
         
-        /*
-        str = MAIN_MENU
-        from <a:/ask_quit>
-        to next </a>
-        */
-        
-		strcpy(menu_buff, MAIN_MENU);
+#ifdef IOS /* Cut exit function on iOS */
+        int len = strlen(MAIN_MENU) - strlen(strstr(MAIN_MENU, "\n<a:/ask_quit>"));
+        strncpy(menu_buff, MAIN_MENU, len);
+#else
+        strcpy(menu_buff, MAIN_MENU);
+#endif
+		
 	} else if (cur_menu == menu_about) {
 		snprintf(menu_buff, sizeof(menu_buff), ABOUT_MENU, VERSION);
 	} else if (cur_menu == menu_settings) {
@@ -385,7 +385,7 @@ char *game_menu_gen(void)
 		opt_justify = (unsigned int)opt_justify % JUST_MAX;
 		switch (menu_settings_num) {
 		case 0:
-            
+                
             /*
             str SETTINGS_GFX_MENU
             from = "<a:/hl>%s</a>\n";

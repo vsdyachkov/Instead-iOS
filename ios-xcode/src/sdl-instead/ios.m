@@ -66,6 +66,12 @@ void set_orientation(int orientation)
     }
 }
 
+void correct_font_size (void)
+{
+    BOOL is_iPad = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
+    opt_fsize = is_iPad ? 5 : 15;
+}
+
 int setup_inbox(void)
 {
 	char path[PATH_MAX];
