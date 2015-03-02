@@ -881,11 +881,11 @@ int game_theme_init(void)
     
 #ifdef IOS /* setting the correct orientation of the screen from theme settings*/
     if (game_theme.h > game_theme.w) {
-        SDL_SetHint(SDL_HINT_ORIENTATIONS, "Portrait PortraitUpsideDown" );
-        set_orientation(1);
+        SDL_SetHint(SDL_HINT_ORIENTATIONS, "Portrait PortraitUpsideDown");
+        set_portrait(1);
     } else {
-        SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight" );
-        set_orientation(3);
+        SDL_SetHint(SDL_HINT_ORIENTATIONS, "LandscapeLeft LandscapeRight");
+        set_portrait(0);
     }
 #endif
     

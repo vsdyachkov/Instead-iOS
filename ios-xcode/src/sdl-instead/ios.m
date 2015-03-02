@@ -59,17 +59,29 @@ static char *inbox(void)
 	return dir;
 }
 
-void set_orientation(int orientation)
+void set_portrait(int isPortrait)
 {
-    if (![[[UIDevice currentDevice] valueForKey:@"orientation"] isEqual: @(orientation)]) {
-        [[UIDevice currentDevice] setValue:@(orientation) forKey:@"orientation"];
+    int orientation = [[UIDevice currentDevice] valueForKey:@"orientation"];
+    if (isPortrait) {
+        if (UIDeviceOrientationIsPortrait(orientation)) {
+            return;
+        } else {
+            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationPortrait) forKey:@"orientation"];
+        }
+    } else {
+        if (UIDeviceOrientationIsLandscape(orientation)) {
+            return;
+        } else {
+            [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeRight) forKey:@"orientation"];
+        }
     }
 }
 
 void correct_font_size (void)
 {
-    BOOL is_iPad = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPad;
-    opt_fsize = is_iPad ? 5 : 15;
+    BOOL is_iPhone = [UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone;
+    // TODO: need correctly fix font size
+    opt_fsize = is_iPhone ? opt_fsize : opt_fsize;
 }
 
 int setup_inbox(void)

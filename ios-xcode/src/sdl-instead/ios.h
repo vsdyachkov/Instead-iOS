@@ -9,7 +9,7 @@
 
 extern int setup_inbox(void);
 
-extern void set_orientation(int orientation);
+void set_portrait(int isPortrait);
 void correct_font_size (void);
 
 #endif

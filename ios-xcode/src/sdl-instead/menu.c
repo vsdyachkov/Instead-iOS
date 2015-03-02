@@ -367,14 +367,16 @@ static int gtr = 0;
 static int menu_settings_num = 0;
 char *game_menu_gen(void)
 {
+    
 	if (cur_menu == menu_main) {
         
-//#ifdef IOS /* Cut exit function on iOS */
-//        unsigned long len = strlen(MAIN_MENU) - strlen(strstr(MAIN_MENU, "<a:/ask_quit>"));
-//        strncpy(menu_buff, MAIN_MENU, len);
-//#else
+#ifdef IOS /* Cut exit function on iOS */
+        int len = strlen(MAIN_MENU) - strlen(strstr(MAIN_MENU, "\n<a:/ask_quit>"));
+        strncpy(menu_buff, MAIN_MENU, len);
+        menu_buff[len] = '\0';
+#else
         strcpy(menu_buff, MAIN_MENU);
-//#endif
+#endif
 		
 	} else if (cur_menu == menu_about) {
 		snprintf(menu_buff, sizeof(menu_buff), ABOUT_MENU, VERSION);
@@ -383,15 +385,21 @@ char *game_menu_gen(void)
 		char *kbd [KBD_MAX] = { KBD_MODE_SMART, KBD_MODE_LINKS, KBD_MODE_SCROLL };
 		opt_kbd = (unsigned int)opt_kbd % KBD_MAX;
 		opt_justify = (unsigned int)opt_justify % JUST_MAX;
+        
+        /* temp
+        char* pos1 = strstr(SETTINGS_GFX_MENU, "<a:/hl>%s</a>\n");
+        char* pos2 = strstr(SETTINGS_GFX_MENU, "<a:/fading>%s</a>\n") + strlen("<a:/fading>%s</a>\n");
+        
+        char* sub_str = SETTINGS_GFX_MENU;
+        int len = SETTINGS_GFX_MENU-pos1+1;
+        sub_str[10] = pos2;
+        
+        printf ("Искомая строка начинается с символа %d\n",pos1-SETTINGS_GFX_MENU+1);
+        printf ("Искомая строка заканчиватеся с символа %d\n",pos2-SETTINGS_GFX_MENU+1);
+        */
+        
 		switch (menu_settings_num) {
 		case 0:
-                
-            /*
-            str SETTINGS_GFX_MENU
-            from = "<a:/hl>%s</a>\n";
-            to = "<a:/fading>%s</a>\n";
-            */
-                
 			snprintf(menu_buff, sizeof(menu_buff), SETTINGS_GFX_MENU,
 			opt_get_mode(), opt_fs?ON:OFF, opt_fsize, just[opt_justify],
 				opt_hl?ON:OFF, opt_fading?ON:OFF, opt_owntheme?ON:OFF);
