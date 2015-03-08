@@ -857,7 +857,6 @@ int game_theme_init(void)
 #endif
 
 #ifdef IOS /* setting the correct screen resolution from theme settings */
-    correct_font_size();
     if (game_theme.h > game_theme.w) {
         gfx_get_max_mode(&h, &w);
     } else {

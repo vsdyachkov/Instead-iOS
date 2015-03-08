@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9F8934D0-43C9-4666-8F6D-91A330668017</string>
+	<key>IDESourceControlProjectName</key>
+	<string>INSTEAD</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7CA4C03C75F0FC9C5DD5865B9D58A6148DC9F812</key>
+		<string>https://github.com/vsdyachkov/Instead-iOS.git</string>
+		<key>C5B9AA50AD84BDDE4D1B0F9A5782ACD6F7EE9A66</key>
+		<string>https://github.com/instead-hub/instead</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-xcode/INSTEAD.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7CA4C03C75F0FC9C5DD5865B9D58A6148DC9F812</key>
+		<string>../../..</string>
+		<key>C5B9AA50AD84BDDE4D1B0F9A5782ACD6F7EE9A66</key>
+		<string>../../..ios-xcode/dep/instead/</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/vsdyachkov/Instead-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7CA4C03C75F0FC9C5DD5865B9D58A6148DC9F812</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C5B9AA50AD84BDDE4D1B0F9A5782ACD6F7EE9A66</string>
+			<key>IDESourceControlWCCName</key>
+			<string>instead</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7CA4C03C75F0FC9C5DD5865B9D58A6148DC9F812</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Instead-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
