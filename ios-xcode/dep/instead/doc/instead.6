@@ -1,0 +1,164 @@
+.TH INSTEAD 6 "Version 2.2.2" Instead GAMES
+
+.SH NAME
+
+INSTEAD - Simple Text Adventure Engine, The Interpreter
+
+.SH DESCRIPTION
+
+The interpreter of STEAD (Simple Text Adventures) allows one to play games that combine visual novels, text adventures and classic quests of 1990-s. 
+The STEAD games features are:
+.TP
+ * very simple source code of the stories. (based on LUA);
+.TP
+ * graphical game interface;
+.TP
+ * supports music and images;
+.TP
+ * theme support \- a game may change the interface look;
+.TP
+ * portability (originally written for Linux, depends on SDL and lua).
+ 
+.SH SYNOPSIS
+
+.B sdl-instead
+.I [options] [game.zip or game.idf or path to game]
+
+.SH OPTIONS
+
+.TP
+.B -debug
+Debug mode (for game developers).
+.TP
+.B -nosound
+Run the game without sound.
+.TP
+.B -vsync
+vsync output (SDL2 only)
+.TP
+.B -gamespath <path>
+Add path with games.
+.TP
+.B -themespath <path>
+Add path with themes.
+.TP
+.B -nostdgames
+Do not use default games.
+.TP
+.B -nostdthemes
+Do not use default themes.
+.TP
+.B -game <basename>
+Select game in gamespath.
+.TP
+.B -theme <basename>
+Select theme in themespath.
+.TP
+.B -owntheme
+Force game to use own theme.
+.TP
+.B -fullscreen
+Run the game in fullscreen mode.
+.TP
+.B -window
+Run the game in windowed mode.
+.TP
+.B -noautosave
+Disable autosave/autoload.
+.TP
+.B -encode <lua file> [encoded file]
+Encode lua file. Encoded file can be executed with doencfile("encoded file").
+.TP
+.B -idf <path to resources directory or game>
+Build idf file [INSTEAD data file] from directory.
+.TP
+.B -mode [WxH]
+Use WxH resolution.
+.TP
+.B -software
+Force software rendering
+.TP
+.B -nopause
+Do not pause the game on window minimize.
+.TP
+.B -hinting 0|1|2|3
+Set the font hinting mode (helpful with infinality).
+.TP
+.B -install [game in zip]
+Install game from zip archive
+.TP
+.B -quit
+Quit :)
+.TP
+.B -appdata [fullpath]
+Store saves and settings in appdata path. Path must exist!
+.TP
+.B -chunksize [size in bytes]
+Size for audio buffer. Try this if sound lags.
+.TP
+.B -version
+Show version and exit.
+.TP
+.B -lua <script.lua> [arguments]
+Exec lua script (for game developers).
+.TP
+.B -luac <script.lua>
+Check lua script (for game developers).
+
+.PP
+Configuration file name is 'insteadrc' and it's located in ~/.instead/.
+
+Games can be downloaded from http://instead.sourceforge.net. Unzip them
+in ~/.instead/games.
+
+.SH CONTROLS
+
+Please, see tutorial.
+
+.SH LICENCE
+
+This software is covered by the terms of the MIT license.
+
+.SH WARRANTY
+None.
+
+.SH COPYRIGHT AND CREDITS
+
+.TP
+.B Peter Kosyh
+INSTEAD author.
+.TP
+.B Ilya Ryndin
+Initial port to Windows.
+.TP
+.B Mahno Aleksey
+Port to Android.
+.TP
+.B .dm
+Port to Mac OS X.
+.TP
+.B Andrey Afletdinov
+Port to Windows CE.
+.TP
+.B Vadim Balashoff
+Advices.
+.TP
+.B Vladimir Zhirov
+Advices.
+.TP
+.B Alexander Yakovlev
+manual.tex support.
+.TP
+.B Serj Kalichev
+Advices and default theme correction. 
+.TP
+.B Vladimir Podobaev, Oleg Gvozdev
+Testers.
+.TP
+.B Alexander Soborov
+Wiki support.
+.TP
+Many others for comments, bug reports, games and ideas.
+
+.SH SEE ALSO
+.BR http://instead.sourceforge.net

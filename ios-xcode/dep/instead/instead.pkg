@@ -1,0 +1,130 @@
+; This is an auto-generated PKG file by Carbide.
+; This file uses variables specific to Carbide builds that will not work
+; on command-line builds. If you want to use this generated PKG file from the
+; command-line tools you will need to modify the variables with the appropriate
+; values: , $(PLATFORM), $(TARGET)
+;
+;Language - standard language definitions
+&EN
+
+; standard SIS file header
+#{"INSTEAD"},(0xA0020410),2,2,2
+
+;Localised Vendor name
+%{"Peter Kosyh"}
+
+;Unique Vendor name
+:"Peter Kosyh"
+
+;Supports Series 60 v 3.0
+[0x101F7961], 0, 0, 0, {"Series60ProductID"}
+
+;
+;
+
+
+;Files to install
+;You should change the source paths to match that of your environment
+;<source> <destination>
+""-"c:\data\instead\stdout.txt",FILENULL
+""-"c:\data\instead\stderr.txt",FILENULL
+""-"c:\data\instead\sdl.ini",FILENULL
+
+"\home\peter\Devel\gnupoc\symbian-sdks\s60_26\epoc32\release\gcce\urel\instead.exe"    -"!:\sys\bin\instead.exe"
+"\home\peter\Devel\gnupoc\symbian-sdks\s60_26\epoc32\data\z\resource\apps\instead.rsc"             -"!:\resource\apps\instead.rsc"
+"\home\peter\Devel\gnupoc\symbian-sdks\s60_26\epoc32\data\z\private\10003a3f\apps\instead_reg.rsc" -"!:\private\10003a3f\import\apps\instead_reg.rsc"
+"\home\peter\Devel\gnupoc\symbian-sdks\s60_26\epoc32\data\z\resource\apps\instead.mif"             -"!:\resource\apps\instead.mif"
+".\symbian_gamedata\appdata\games\tutorial3\main.lua" -"!:\data\instead\appdata\games\tutorial3\main.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-ru.lua" -"!:\data\instead\appdata\games\tutorial3\main-ru.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-ua.lua" -"!:\data\instead\appdata\games\tutorial3\main-ua.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-en.lua" -"!:\data\instead\appdata\games\tutorial3\main-en.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-it.lua" -"!:\data\instead\appdata\games\tutorial3\main-it.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-es.lua" -"!:\data\instead\appdata\games\tutorial3\main-es.lua"
+".\symbian_gamedata\appdata\games\tutorial3\main-pt.lua" -"!:\data\instead\appdata\games\tutorial3\main-pt.lua"
+".\symbian_gamedata\appdata\games\tutorial3\ru.png" -"!:\data\instead\appdata\games\tutorial3\ru.png"
+".\symbian_gamedata\appdata\games\tutorial3\ua.png" -"!:\data\instead\appdata\games\tutorial3\ua.png"
+".\symbian_gamedata\appdata\games\tutorial3\gb.png" -"!:\data\instead\appdata\games\tutorial3\gb.png"
+".\symbian_gamedata\appdata\games\tutorial3\it.png" -"!:\data\instead\appdata\games\tutorial3\it.png"
+".\symbian_gamedata\appdata\games\tutorial3\es.png" -"!:\data\instead\appdata\games\tutorial3\es.png"
+".\symbian_gamedata\appdata\games\tutorial3\br.png" -"!:\data\instead\appdata\games\tutorial3\br.png"
+".\symbian_gamedata\appdata\games\tutorial3\instead.png" -"!:\data\instead\appdata\games\tutorial3\instead.png"
+".\symbian_gamedata\appdata\games\tutorial3\instead.ogg" -"!:\data\instead\appdata\games\tutorial3\instead.ogg"
+".\symbian_gamedata\stead\vars.lua" -"!:\data\instead\stead\vars.lua"
+".\symbian_gamedata\stead\timer.lua" -"!:\data\instead\stead\timer.lua"
+".\symbian_gamedata\stead\kbd.lua" -"!:\data\instead\stead\kbd.lua"
+".\symbian_gamedata\stead\walk.lua" -"!:\data\instead\stead\walk.lua"
+".\symbian_gamedata\stead\object.lua" -"!:\data\instead\stead\object.lua"
+".\symbian_gamedata\stead\dash.lua" -"!:\data\instead\stead\dash.lua"
+".\symbian_gamedata\stead\snapshots.lua" -"!:\data\instead\stead\snapshots.lua"
+".\symbian_gamedata\stead\hideinv.lua" -"!:\data\instead\stead\hideinv.lua"
+".\symbian_gamedata\stead\quotes.lua" -"!:\data\instead\stead\quotes.lua"
+".\symbian_gamedata\stead\format.lua" -"!:\data\instead\stead\format.lua"
+".\symbian_gamedata\stead\click.lua" -"!:\data\instead\stead\click.lua"
+".\symbian_gamedata\stead\finger.lua" -"!:\data\instead\stead\finger.lua"
+".\symbian_gamedata\stead\events.lua" -"!:\data\instead\stead\events.lua"
+".\symbian_gamedata\stead\dbg.lua" -"!:\data\instead\stead\dbg.lua"
+".\symbian_gamedata\stead\xact.lua" -"!:\data\instead\stead\xact.lua"
+".\symbian_gamedata\stead\hotkeys.lua" -"!:\data\instead\stead\hotkeys.lua"
+".\symbian_gamedata\stead\input.lua" -"!:\data\instead\stead\input.lua"
+".\symbian_gamedata\stead\gui.lua" -"!:\data\instead\stead\gui.lua"
+".\symbian_gamedata\stead\stead.lua" -"!:\data\instead\stead\stead.lua"
+".\symbian_gamedata\stead\para.lua" -"!:\data\instead\stead\para.lua"
+".\symbian_gamedata\stead\theme.lua" -"!:\data\instead\stead\theme.lua"
+".\symbian_gamedata\stead\prefs.lua" -"!:\data\instead\stead\prefs.lua"
+".\symbian_gamedata\stead\sprites.lua" -"!:\data\instead\stead\sprites.lua"
+".\symbian_gamedata\stead\sound.lua" -"!:\data\instead\stead\sound.lua"
+".\symbian_gamedata\stead\wroom.lua" -"!:\data\instead\stead\wroom.lua"
+".\symbian_gamedata\stead\nouse.lua" -"!:\data\instead\stead\nouse.lua"
+".\symbian_gamedata\stead\dlg.lua" -"!:\data\instead\stead\dlg.lua"
+".\symbian_gamedata\stead\counters.lua" -"!:\data\instead\stead\counters.lua"
+".\symbian_gamedata\stead\proxymenu.lua" -"!:\data\instead\stead\proxymenu.lua"
+".\symbian_gamedata\stead\nolife.lua" -"!:\data\instead\stead\nolife.lua"
+".\symbian_gamedata\lang\ru.ini" -"!:\data\instead\lang\ru.ini"
+".\symbian_gamedata\lang\en.ini" -"!:\data\instead\lang\en.ini"
+".\symbian_gamedata\themes\fantasy\down.png" -"!:\data\instead\themes\fantasy\down.png"
+".\symbian_gamedata\themes\fantasy\up.png" -"!:\data\instead\themes\fantasy\up.png"
+".\symbian_gamedata\themes\fantasy\menu.png" -"!:\data\instead\themes\fantasy\menu.png"
+".\symbian_gamedata\themes\fantasy\bg.jpg" -"!:\data\instead\themes\fantasy\bg.jpg"
+".\symbian_gamedata\themes\fantasy\theme.ini" -"!:\data\instead\themes\fantasy\theme.ini"
+".\symbian_gamedata\themes\arctic\aup.png" -"!:\data\instead\themes\arctic\aup.png"
+".\symbian_gamedata\themes\arctic\menu.png" -"!:\data\instead\themes\arctic\menu.png"
+".\symbian_gamedata\themes\arctic\bg.jpg" -"!:\data\instead\themes\arctic\bg.jpg"
+".\symbian_gamedata\themes\arctic\theme.ini" -"!:\data\instead\themes\arctic\theme.ini"
+".\symbian_gamedata\themes\arctic\cursor.png" -"!:\data\instead\themes\arctic\cursor.png"
+".\symbian_gamedata\themes\arctic\cursor-use.png" -"!:\data\instead\themes\arctic\cursor-use.png"
+".\symbian_gamedata\themes\arctic\adown.png" -"!:\data\instead\themes\arctic\adown.png"
+".\symbian_gamedata\themes\clearlooks\aup.png" -"!:\data\instead\themes\clearlooks\aup.png"
+".\symbian_gamedata\themes\clearlooks\menu.png" -"!:\data\instead\themes\clearlooks\menu.png"
+".\symbian_gamedata\themes\clearlooks\bg.jpg" -"!:\data\instead\themes\clearlooks\bg.jpg"
+".\symbian_gamedata\themes\clearlooks\theme.ini" -"!:\data\instead\themes\clearlooks\theme.ini"
+".\symbian_gamedata\themes\clearlooks\cursor.png" -"!:\data\instead\themes\clearlooks\cursor.png"
+".\symbian_gamedata\themes\clearlooks\cursor-use.png" -"!:\data\instead\themes\clearlooks\cursor-use.png"
+".\symbian_gamedata\themes\clearlooks\adown.png" -"!:\data\instead\themes\clearlooks\adown.png"
+".\symbian_gamedata\themes\original\theme.ini" -"!:\data\instead\themes\original\theme.ini"
+".\symbian_gamedata\themes\default\click.wav" -"!:\data\instead\themes\default\click.wav"
+".\symbian_gamedata\themes\default\aup.png" -"!:\data\instead\themes\default\aup.png"
+".\symbian_gamedata\themes\default\menu.png" -"!:\data\instead\themes\default\menu.png"
+".\symbian_gamedata\themes\default\use.png" -"!:\data\instead\themes\default\use.png"
+".\symbian_gamedata\themes\default\bg.jpg" -"!:\data\instead\themes\default\bg.jpg"
+".\symbian_gamedata\themes\default\theme.ini" -"!:\data\instead\themes\default\theme.ini"
+".\symbian_gamedata\themes\default\cursor.png" -"!:\data\instead\themes\default\cursor.png"
+".\symbian_gamedata\themes\default\click.ogg" -"!:\data\instead\themes\default\click.ogg"
+".\symbian_gamedata\themes\default\cursor-use.png" -"!:\data\instead\themes\default\cursor-use.png"
+".\symbian_gamedata\themes\default\sans.ttf" -"!:\data\instead\themes\default\sans.ttf"
+".\symbian_gamedata\themes\default\sans-b.ttf" -"!:\data\instead\themes\default\sans-b.ttf"
+".\symbian_gamedata\themes\default\sans-i.ttf" -"!:\data\instead\themes\default\sans-i.ttf"
+".\symbian_gamedata\themes\default\sans-bi.ttf" -"!:\data\instead\themes\default\sans-bi.ttf"
+".\symbian_gamedata\themes\default\adown.png" -"!:\data\instead\themes\default\adown.png"
+".\symbian_gamedata\themes\default\aup.png" -"!:\data\instead\themes\default\aup.png"
+".\symbian_gamedata\themes\book\theme.ini" -"!:\data\instead\themes\book\theme.ini"
+".\symbian_gamedata\themes\book\book.jpg" -"!:\data\instead\themes\book\book.jpg"
+".\symbian_gamedata\themes\bluesteel\menu.png" -"!:\data\instead\themes\bluesteel\menu.png"
+".\symbian_gamedata\themes\bluesteel\downarrow.png" -"!:\data\instead\themes\bluesteel\downarrow.png"
+".\symbian_gamedata\themes\bluesteel\bg.jpg" -"!:\data\instead\themes\bluesteel\bg.jpg"
+".\symbian_gamedata\themes\bluesteel\theme.ini" -"!:\data\instead\themes\bluesteel\theme.ini"
+".\symbian_gamedata\themes\bluesteel\cursor.png" -"!:\data\instead\themes\bluesteel\cursor.png"
+".\symbian_gamedata\themes\bluesteel\cursor-use.png" -"!:\data\instead\themes\bluesteel\cursor-use.png"
+".\symbian_gamedata\themes\bluesteel\uparrow.png" -"!:\data\instead\themes\bluesteel\uparrow.png"
+".\symbian_gamedata\themes\wide\theme.ini" -"!:\data\instead\themes\wide\theme.ini"
+".\symbian_gamedata\icon\sdl_instead.png" -"!:\data\instead\icon\sdl_instead.png"
+".\symbian_gamedata\icon\sdl_instead_1.png" -"!:\data\instead\icon\sdl_instead_1.png"

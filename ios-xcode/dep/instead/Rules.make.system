@@ -1,0 +1,43 @@
+VERSION := 2.2.2
+
+PREFIX=/usr/local
+DESTDIR=
+BIN=$(PREFIX)/bin/
+DATAPATH=$(PREFIX)/share/instead
+STEADPATH=$(DATAPATH)/stead
+THEMESPATH=$(DATAPATH)/themes
+GAMESPATH=$(DATAPATH)/games
+ICONPATH=$(PREFIX)/share/pixmaps
+DOCPATH=$(PREFIX)/share/doc/instead
+LANGPATH=$(DATAPATH)/lang
+MANPATH=$(PREFIX)/share/man/man6
+SYSTEMSETUP=yes
+
+ZLIB_CFLAGS=
+ZLIB_LFLAGS=-lz
+
+LUA_CFLAGS=$(shell pkg-config --cflags lua5.1)
+LUA_LFLAGS=$(shell pkg-config --libs lua5.1)
+
+# for arch and gentoo linux use this
+#
+# LUA_CFLAGS=$(shell pkg-config --cflags lua)
+# LUA_LFLAGS=$(shell pkg-config --libs lua)
+#
+
+SDL_CFLAGS=$(shell sdl-config --cflags)
+SDL_LFLAGS=$(shell sdl-config --libs) -lSDL_ttf -lSDL_mixer -lSDL_image -lm
+
+CFLAGS	+= -Wall -Dunix -D_USE_UNPACK # -D_SDL_MOD_BUG
+
+INSTALLD=install -d -m 0755
+INSTALLB=install -m 0755
+INSTALL=install -m 0644
+LN=ln -sf
+
+EXE=
+PLATFORM=unix.c
+RESOURCES=
+RM=rm
+AR=ar rc
+RANLIB=ranlib

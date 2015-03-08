@@ -1,0 +1,60 @@
+instead (2.2.2) unstable; urgency=low
+
+  * last_disp regression fixed;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Fri, 6 Feb 2015 19:17:00 +0300
+
+instead (2.2.1) unstable; urgency=low
+  * 2.2.1 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Sat, 31 Jan 2015 16:27:00 +0300
+
+instead (2.2.0) unstable; urgency=low
+  * 2.2.0 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Thu, 1 Jan 2015 10:52:00 +0300
+
+instead (2.1.1) unstable; urgency=low
+  * 2.1.1 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Wed, 9 Jul 2014 13:30:00 +0400
+
+instead (2.1.0) unstable; urgency=low
+  * 2.1.0 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Tue, 3 Jun 2014 17:28:00 +0400
+
+instead (2.0.3) unstable; urgency=low
+  * 2.0.3 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Thu, 20 Feb 2014 17:20:00 +0400
+
+instead (2.0.2) unstable; urgency=low
+  * 2.0.2 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Thu, 30 Jan 2014 08:30:00 +0400
+
+instead (2.0.1) unstable; urgency=low
+  * 2.0.1 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Mon, 27 Jan 2014 19:40:00 +0400
+
+instead (2.0.0) unstable; urgency=low
+  * 2.0.0 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Sun, 26 Jan 2014 13:12:00 +0400
+
+instead (1.9.1) unstable; urgency=low
+  * 1.9.1 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Sat, 13 Jul 2013 14:30:00 +0400
+
+instead (1.9.0) unstable; urgency=low
+  * 1.9.0 release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Fri, 12 Apr 2013 08:00:00 +0400
+
+instead (1.8.3) unstable; urgency=low
+  * debian friendly release;
+
+ -- Peter Kosyh <p.kosyh@gmail.com>  Sat, 26 Jan 2013 14:52:00 +0400
