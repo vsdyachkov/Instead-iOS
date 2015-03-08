@@ -405,7 +405,29 @@ int main(int argc, char *argv[])
 		vsync_sw = 1;
 
 	if (version_sw) {
-		fprintf(stdout, VERSION"\n");
+#ifdef IOS
+        printf("INSTEAD v%s\n", VERSION);
+        
+        printf("%s\n", LUA_RELEASE);
+        
+        SDL_version ver;
+        SDL_VERSION(&ver);
+        printf("SDL v%u.%u.%u\n", ver.major, ver.minor, ver.patch);
+        
+        #include <SDL_image.h>
+        SDL_IMAGE_VERSION(&ver)
+        printf("SDL_image v%u.%u.%u\n", ver.major, ver.minor, ver.patch);
+        
+        #include <SDL_mixer.h>
+        SDL_MIXER_VERSION(&ver)
+        printf("SDL_mixer v%u.%u.%u\n", ver.major, ver.minor, ver.patch);
+        
+        #include <SDL_ttf.h>
+        SDL_TTF_VERSION(&ver)
+        printf("SDL_ttf v%u.%u.%u\n", ver.major, ver.minor, ver.patch);
+#else
+        fprintf(stdout, VERSION"\n");
+#endif
 		goto out;
 	}
 
