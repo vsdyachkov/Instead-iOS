@@ -22,7 +22,7 @@
 		<key>7CA4C03C75F0FC9C5DD5865B9D58A6148DC9F812</key>
 		<string>../../..</string>
 		<key>C5B9AA50AD84BDDE4D1B0F9A5782ACD6F7EE9A66</key>
-		<string>../../..ios-xcode/dep/instead/</string>
+		<string>../../..ios-xcode/dep/instead</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/vsdyachkov/Instead-iOS.git</string>

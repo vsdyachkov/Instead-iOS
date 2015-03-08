@@ -68,6 +68,8 @@ void set_portrait(int isPortrait)
     if (!isPortrait && UIDeviceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
         [[UIDevice currentDevice] setValue:@(UIDeviceOrientationLandscapeRight) forKey:@"orientation"];
     }
+    
+    return;
 }
 
 void correct_font_size (void)

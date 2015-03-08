@@ -25,6 +25,8 @@
 #include "externals.h"
 #include "internals.h"
 
+#include <SDL_hints.h>
+
 int theme_relative = 0;
 
 char	*curtheme_dir = NULL;
