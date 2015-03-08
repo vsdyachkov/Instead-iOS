@@ -427,8 +427,8 @@ int main(int argc, char *argv[])
         printf("SDL_ttf v%u.%u.%u\n", ver.major, ver.minor, ver.patch);
 #else
         fprintf(stdout, VERSION"\n");
+        goto out;
 #endif
-		goto out;
 	}
 
 	if (lua_sw) {

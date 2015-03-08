@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77184EB81AAC544000F2B40D /* lang in Resources */ = {isa = PBXBuildFile; fileRef = 77184EB71AAC544000F2B40D /* lang */; };
+		77184EBB1AAC546100F2B40D /* stead in Resources */ = {isa = PBXBuildFile; fileRef = 77184EB91AAC546100F2B40D /* stead */; };
+		77184EBC1AAC546100F2B40D /* themes in Resources */ = {isa = PBXBuildFile; fileRef = 77184EBA1AAC546100F2B40D /* themes */; };
 		776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776BB7A91AA3480B009889BF /* Media.xcassets */; };
 		776BB7C11AA372A9009889BF /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 776BB7C01AA372A9009889BF /* README.md */; };
 		D017090A1A33252B00AC619F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D01709091A33252B00AC619F /* libz.dylib */; };
@@ -68,9 +71,6 @@
 		D03F965B1A330E8F0054CC00 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = D03F96351A330E8F0054CC00 /* ltm.c */; };
 		D03F965C1A330E8F0054CC00 /* lzio.c in Sources */ = {isa = PBXBuildFile; fileRef = D03F963A1A330E8F0054CC00 /* lzio.c */; };
 		D03F965D1A330E8F0054CC00 /* print.c in Sources */ = {isa = PBXBuildFile; fileRef = D03F963C1A330E8F0054CC00 /* print.c */; };
-		D03F96611A330F5D0054CC00 /* themes in Resources */ = {isa = PBXBuildFile; fileRef = D03F96601A330F5D0054CC00 /* themes */; };
-		D03F96631A330F680054CC00 /* stead in Resources */ = {isa = PBXBuildFile; fileRef = D03F96621A330F680054CC00 /* stead */; };
-		D03F96651A330F770054CC00 /* lang in Resources */ = {isa = PBXBuildFile; fileRef = D03F96641A330F770054CC00 /* lang */; };
 		D03F96731A3311BC0054CC00 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F96721A3311BC0054CC00 /* MobileCoreServices.framework */; };
 		D03F967A1A3311C90054CC00 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F96791A3311C90054CC00 /* ImageIO.framework */; };
 		D03F967C1A3311DD0054CC00 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D03F967B1A3311DD0054CC00 /* libc++.dylib */; };
@@ -114,6 +114,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77184EB71AAC544000F2B40D /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; name = lang; path = dep/instead/lang; sourceTree = SOURCE_ROOT; };
+		77184EB91AAC546100F2B40D /* stead */ = {isa = PBXFileReference; lastKnownFileType = folder; name = stead; path = dep/instead/stead; sourceTree = "<group>"; };
+		77184EBA1AAC546100F2B40D /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = themes; path = dep/instead/themes; sourceTree = "<group>"; };
 		776BB7A91AA3480B009889BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		776BB7C01AA372A9009889BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		776BB7C61AA3A0FB009889BF /* ios.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ios.h; path = "src/sdl-instead/ios.h"; sourceTree = SOURCE_ROOT; };
@@ -225,9 +228,6 @@
 		D03F963A1A330E8F0054CC00 /* lzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lzio.c; path = "../lua-5.1.5/lua/lzio.c"; sourceTree = "<group>"; };
 		D03F963B1A330E8F0054CC00 /* lzio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lzio.h; path = "../lua-5.1.5/lua/lzio.h"; sourceTree = "<group>"; };
 		D03F963C1A330E8F0054CC00 /* print.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = print.c; path = "../lua-5.1.5/lua/print.c"; sourceTree = "<group>"; };
-		D03F96601A330F5D0054CC00 /* themes */ = {isa = PBXFileReference; lastKnownFileType = folder; path = themes; sourceTree = "<group>"; };
-		D03F96621A330F680054CC00 /* stead */ = {isa = PBXFileReference; lastKnownFileType = folder; path = stead; sourceTree = "<group>"; };
-		D03F96641A330F770054CC00 /* lang */ = {isa = PBXFileReference; lastKnownFileType = folder; path = lang; sourceTree = "<group>"; };
 		D03F96721A3311BC0054CC00 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		D03F96791A3311C90054CC00 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		D03F967B1A3311DD0054CC00 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
@@ -263,12 +263,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77184DBF1AAC50BA00F2B40D /* Instead */ = {
+			isa = PBXGroup;
+			children = (
+				D03F95231A330C2A0054CC00 /* sdl-instead */,
+				77184EB91AAC546100F2B40D /* stead */,
+				77184EBA1AAC546100F2B40D /* themes */,
+				77184EB71AAC544000F2B40D /* lang */,
+			);
+			name = Instead;
+			sourceTree = "<group>";
+		};
 		D03F95071A330C2A0054CC00 = {
 			isa = PBXGroup;
 			children = (
 				776BB7C01AA372A9009889BF /* README.md */,
 				D03F965F1A330F2D0054CC00 /* Resources */,
-				D03F95231A330C2A0054CC00 /* sdl-instead */,
+				77184DBF1AAC50BA00F2B40D /* Instead */,
 				D03F96051A330E7D0054CC00 /* lua */,
 				D03F95A41A330DEC0054CC00 /* SDL_ttf.xcodeproj */,
 				D03F959E1A330DDB0054CC00 /* SDL_mixer.xcodeproj */,
@@ -453,9 +464,6 @@
 		D03F965F1A330F2D0054CC00 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				D03F96641A330F770054CC00 /* lang */,
-				D03F96621A330F680054CC00 /* stead */,
-				D03F96601A330F5D0054CC00 /* themes */,
 				D03F968C1A3314CF0054CC00 /* info.plist */,
 				776BB7A91AA3480B009889BF /* Media.xcassets */,
 			);
@@ -566,10 +574,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D03F96651A330F770054CC00 /* lang in Resources */,
-				D03F96631A330F680054CC00 /* stead in Resources */,
+				77184EBC1AAC546100F2B40D /* themes in Resources */,
+				77184EBB1AAC546100F2B40D /* stead in Resources */,
+				77184EB81AAC544000F2B40D /* lang in Resources */,
 				776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */,
-				D03F96611A330F5D0054CC00 /* themes in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

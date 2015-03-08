@@ -368,7 +368,7 @@ static int menu_settings_num = 0;
 char *game_menu_gen(void)
 {
 	if (cur_menu == menu_main) {
-        strcpy(menu_buff, MAIN_MENU);
+		strcpy(menu_buff, MAIN_MENU);
 	} else if (cur_menu == menu_about) {
 		snprintf(menu_buff, sizeof(menu_buff), ABOUT_MENU, VERSION);
 	} else if (cur_menu == menu_settings) {
@@ -376,10 +376,9 @@ char *game_menu_gen(void)
 		char *kbd [KBD_MAX] = { KBD_MODE_SMART, KBD_MODE_LINKS, KBD_MODE_SCROLL };
 		opt_kbd = (unsigned int)opt_kbd % KBD_MAX;
 		opt_justify = (unsigned int)opt_justify % JUST_MAX;
-
 		switch (menu_settings_num) {
 		case 0:
-			snprintf(menu_buff, sizeof(menu_buff), SETTINGS_GFX_MENU,
+			snprintf(menu_buff, sizeof(menu_buff), SETTINGS_GFX_MENU, 
 			opt_get_mode(), opt_fs?ON:OFF, opt_fsize, just[opt_justify],
 				opt_hl?ON:OFF, opt_fading?ON:OFF, opt_owntheme?ON:OFF);
 			break;

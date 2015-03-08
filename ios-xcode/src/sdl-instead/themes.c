@@ -892,8 +892,6 @@ int game_theme_init(void)
 	return 0;
 }
 
-
-
 static int theme_parse(const char *path)
 {
 	idff_t idf = NULL;
