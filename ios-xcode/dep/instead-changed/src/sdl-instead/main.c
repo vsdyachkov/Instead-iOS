@@ -544,12 +544,11 @@ int main(int argc, char *argv[])
 		game_theme_select(opt_theme);
 	if (!curtheme_dir)
 		game_theme_select(DEFAULT_THEME);
-
     
 	/* Initialize SDL */
 	if (gfx_init() < 0)
 		return -1;
-
+    
 	if (gfx_video_init() || input_init())
 		return -1;
 
@@ -560,15 +559,17 @@ int main(int argc, char *argv[])
 	if (game_init(opt_game)) {
 		game_error();
 	}
-
+    
+    showLauncher();
+    
 	game_loop();
 	cfg_save();
-	game_done(0);
+	//game_done(0);
 
-	gfx_video_done();
+	//gfx_video_done();
 
 #ifndef ANDROID
-	gfx_done();
+	//gfx_done();
 #endif
 out:
 	if (debug_sw)
@@ -581,7 +582,9 @@ out:
 		remove_dir(game_tmp_path());
 #endif
 #if defined(ANDROID) || defined(IOS)
-	exit(err);
+	//exit(err);
+    showLauncher();
+    game_loop();
 #endif
 	return err;
 }

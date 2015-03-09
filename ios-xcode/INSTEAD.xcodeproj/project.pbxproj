@@ -30,6 +30,10 @@
 		771850451AACA11A00F2B40D /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7718503E1AACA11A00F2B40D /* unzip.c */; };
 		771850461AACA11A00F2B40D /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 7718503F1AACA11A00F2B40D /* util.c */; };
 		776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 776BB7A91AA3480B009889BF /* Media.xcassets */; };
+		776C296E1AADBEA400FF197B /* Launcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 776C296C1AADBEA400FF197B /* Launcher.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		776C29711AADBF7A00FF197B /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 776C29701AADBF7A00FF197B /* Storyboard.storyboard */; };
+		77756F8B1AAE353200F727B8 /* XMLDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 77756F8A1AAE353200F727B8 /* XMLDictionary.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		777A7FA31AAE30B800BC63E9 /* launcher_manager.m in Sources */ = {isa = PBXBuildFile; fileRef = 777A7FA11AAE30B800BC63E9 /* launcher_manager.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		779038051AACB25800F76885 /* ios.m in Sources */ = {isa = PBXBuildFile; fileRef = 779038041AACB25800F76885 /* ios.m */; };
 		779038071AACB26000F76885 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 779038061AACB26000F76885 /* main.c */; };
 		779038091AACB26800F76885 /* themes.c in Sources */ = {isa = PBXBuildFile; fileRef = 779038081AACB26800F76885 /* themes.c */; };
@@ -157,6 +161,13 @@
 		771850401AACA11A00F2B40D /* util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = util.h; path = "dep/instead/src/sdl-instead/util.h"; sourceTree = SOURCE_ROOT; };
 		776BB7A91AA3480B009889BF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		776BB7C01AA372A9009889BF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		776C296B1AADBEA400FF197B /* Launcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Launcher.h; sourceTree = "<group>"; };
+		776C296C1AADBEA400FF197B /* Launcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Launcher.m; sourceTree = "<group>"; };
+		776C29701AADBF7A00FF197B /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		77756F891AAE353200F727B8 /* XMLDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLDictionary.h; sourceTree = "<group>"; };
+		77756F8A1AAE353200F727B8 /* XMLDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLDictionary.m; sourceTree = "<group>"; };
+		777A7FA11AAE30B800BC63E9 /* launcher_manager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = launcher_manager.m; sourceTree = "<group>"; };
+		777A7FA21AAE30B800BC63E9 /* launcher_manager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = launcher_manager.h; sourceTree = "<group>"; };
 		779038031AACB25800F76885 /* ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ios.h; path = "dep/instead-changed/src/sdl-instead/ios.h"; sourceTree = SOURCE_ROOT; };
 		779038041AACB25800F76885 /* ios.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ios.m; path = "dep/instead-changed/src/sdl-instead/ios.m"; sourceTree = SOURCE_ROOT; };
 		779038061AACB26000F76885 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = "dep/instead-changed/src/sdl-instead/main.c"; sourceTree = SOURCE_ROOT; };
@@ -272,6 +283,15 @@
 			name = Instead;
 			sourceTree = "<group>";
 		};
+		77756F881AAE353200F727B8 /* XMLDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				77756F891AAE353200F727B8 /* XMLDictionary.h */,
+				77756F8A1AAE353200F727B8 /* XMLDictionary.m */,
+			);
+			path = XMLDictionary;
+			sourceTree = "<group>";
+		};
 		779038021AACB1EA00F76885 /* dep */ = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +308,12 @@
 		D03F95071A330C2A0054CC00 = {
 			isa = PBXGroup;
 			children = (
+				777A7FA21AAE30B800BC63E9 /* launcher_manager.h */,
+				777A7FA11AAE30B800BC63E9 /* launcher_manager.m */,
+				776C296B1AADBEA400FF197B /* Launcher.h */,
+				776C296C1AADBEA400FF197B /* Launcher.m */,
+				776C29701AADBF7A00FF197B /* Storyboard.storyboard */,
+				77756F881AAE353200F727B8 /* XMLDictionary */,
 				D03F965F1A330F2D0054CC00 /* Resources */,
 				779038021AACB1EA00F76885 /* dep */,
 				776BB7C01AA372A9009889BF /* README.md */,
@@ -326,11 +352,12 @@
 		D03F95231A330C2A0054CC00 /* sdl-instead */ = {
 			isa = PBXGroup;
 			children = (
+				771850171AAC9FB200F2B40D /* internals.h */,
+				771850081AAC9F9300F2B40D /* externals.h */,
 				77184FFE1AAC9F5700F2B40D /* cache.c */,
 				77184FFF1AAC9F5700F2B40D /* cache.h */,
 				771850061AAC9F9300F2B40D /* config.c */,
 				771850071AAC9F9300F2B40D /* config.h */,
-				771850081AAC9F9300F2B40D /* externals.h */,
 				771850091AAC9F9300F2B40D /* game.c */,
 				7718500A1AAC9F9300F2B40D /* game.h */,
 				770114801AACE52200D330FD /* graphics.c */,
@@ -341,7 +368,6 @@
 				771850141AAC9FB200F2B40D /* input.h */,
 				771850151AAC9FB200F2B40D /* instead.c */,
 				771850161AAC9FB200F2B40D /* instead.h */,
-				771850171AAC9FB200F2B40D /* internals.h */,
 				771850181AAC9FB200F2B40D /* ioapi.c */,
 				771850191AAC9FB200F2B40D /* ioapi.h */,
 				779038031AACB25800F76885 /* ios.h */,
@@ -583,6 +609,7 @@
 				77184EBB1AAC546100F2B40D /* stead in Resources */,
 				77184EB81AAC544000F2B40D /* lang in Resources */,
 				776BB7AA1AA3480B009889BF /* Media.xcassets in Resources */,
+				776C29711AADBF7A00FF197B /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,13 +655,16 @@
 				77EE752F1AACD5A7002D8D06 /* lstring.c in Sources */,
 				779038091AACB26800F76885 /* themes.c in Sources */,
 				7718501B1AAC9FB200F2B40D /* instead.c in Sources */,
+				777A7FA31AAE30B800BC63E9 /* launcher_manager.m in Sources */,
 				77EE75251AACD5A7002D8D06 /* liolib.c in Sources */,
 				77EE75291AACD5A7002D8D06 /* loadlib.c in Sources */,
 				77EE75281AACD5A7002D8D06 /* lmem.c in Sources */,
 				77EE751E1AACD5A7002D8D06 /* ldblib.c in Sources */,
+				77756F8B1AAE353200F727B8 /* XMLDictionary.m in Sources */,
 				77EE752A1AACD5A7002D8D06 /* lobject.c in Sources */,
 				7718502C1AACA0B600F2B40D /* menu.c in Sources */,
 				771850321AACA0D900F2B40D /* SDL_anigif.c in Sources */,
+				776C296E1AADBEA400FF197B /* Launcher.m in Sources */,
 				771850101AAC9F9300F2B40D /* game.c in Sources */,
 				771850431AACA11A00F2B40D /* tinymt32.c in Sources */,
 				770114811AACE52200D330FD /* graphics.c in Sources */,

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "gfx_video_init:graphics.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_restart:game.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_init:game.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_loop:game.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SDL_main:main.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "w">
+            </PersistentString>
+            <PersistentString
+               value = "h">
+            </PersistentString>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[Launcher tableView:cellForRowAtIndexPath:]:Launcher.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "gamesNameArray.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_click:game.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SDL_ListModes:graphics.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "w">
+            </PersistentString>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_menu_act:menu.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "SelectVideoDisplay:graphics.c">
+      </ContextState>
+      <ContextState
+         contextName = "game_theme_init:themes.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode[1]">
+            </PersistentString>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+            <PersistentString
+               value = "opt_mode[0]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "game_select:game.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "gfx_modes:graphics.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "opt_mode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

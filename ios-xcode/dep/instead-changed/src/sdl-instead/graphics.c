@@ -1732,7 +1732,7 @@ int gfx_set_mode(int w, int h, int fs)
 	if (!t)
 		t = title;
 #ifdef IOS
-	SDL_VideoWindow = SDL_CreateWindow(t, window_x, window_y, win_w, win_h, 
+    SDL_VideoWindow = SDL_CreateWindow(t, window_x, window_y, win_w, win_h,
 			SDL_WINDOW_OPENGL | SDL_WINDOW_BORDERLESS | SDL_WINDOW_RESIZABLE);
 #else
 	SDL_VideoWindow = SDL_CreateWindow(t, window_x, window_y, win_w, win_h, 
